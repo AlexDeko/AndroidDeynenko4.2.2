@@ -69,7 +69,7 @@ public class MainActivity extends AppCompatActivity {
             public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
                 String text = list.getItemAtPosition(position).toString();
                 Toast.makeText(MainActivity.this, getString(R.string.toast_placeholder,
-                        text));
+                        text), Toast.LENGTH_LONG).show();
                 return false;
             }
         });
